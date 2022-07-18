@@ -5,8 +5,8 @@
 # without running any tests.
 
 # Default arguments
-repo=https://github.com/homenc/HElib.git
-branch=master
+repo=https://github.com/burdettadam/HElib.git
+branch=main
 package=true
 tests=false
 examples=false
@@ -19,8 +19,8 @@ helib_DIR="${helib_install}/helib_pack/share/cmake/helib/"
 function printUsage {
   echo "Usage: CMD [-h] [-r <repo>] [-b <branch>] [-p] [-l] [-t] [-e] [-u] [-g] [-a]" 
   echo "    -h             Displays this help message."
-  echo "    -r <repo>      HElib repo to clone (Default = https://github.com/IBM-HElib/HElib.git)."
-  echo "    -b <branch>    Branch of HElib to checkout (Default = master)."
+  echo "    -r <repo>      HElib repo to clone (Default = https://github.com/burdettadam/HElib.git)."
+  echo "    -b <branch>    Branch of HElib to checkout (Default = main)."
   echo "    -p             Flag to indicate a package build (This is the default build type)."
   echo "    -l             Flag to indicate a library build."
   echo "    -t             Run the HElib Google tests."
@@ -71,7 +71,7 @@ done
 
 # Clone and build HElib in the home directory
 cd
-git clone ${repo} # Default = https://github.com/IBM-HElib/HElib.git
+git clone ${repo} # Default = https://github.com/burdettadam/HElib.git
 cd HElib
 git checkout ${branch} # Default = master
 mkdir build
